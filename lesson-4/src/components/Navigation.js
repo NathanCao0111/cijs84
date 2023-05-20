@@ -9,10 +9,10 @@ function Navigation() {
                 </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav ms-auto py-4 py-lg-0">
-                    <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4" href="html/index.html">Home</a></li>
-                    <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4" href="html/about.html">About</a></li>
-                    <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4" href="html/post.html">Sample Post</a></li>
-                    <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4" href="html/contact.html">Contact</a></li>
+                    <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                    <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                    <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>
+                    <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
