@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { Button } from 'reactstrap'
+import BackgroundImage from './utils/BackgroundImage'
+import CardList from './components/CardList'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <BackgroundImage />
+      <header className='header'>
+          <h4 className='header__heading'>Daily Trello</h4>
+          <Button color='light'>Change background</Button>
       </header>
+      <CardList />
     </div>
   );
 }
