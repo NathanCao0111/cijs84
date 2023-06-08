@@ -1,27 +1,25 @@
-import { Link, NavLink } from "react-router-dom"
+import useHeader from "../../store/useHeader"
 
-function Header() {
-  const activeClass = (param) => {
-    return activeClass.isActive ? 'active' : ''
-  }
-
- return (<nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
-    <div className="container px-4 px-lg-5">
-      <Link className="navbar-brand" to='/'>Start Bootstrap</Link>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i className="fas fa-bars" />
-      </button>
-      <div className="collapse navbar-collapse" id="navbarResponsive">
-        <ul className="navbar-nav ms-auto py-4 py-lg-0">
-          <li className="nav-item"><NavLink className={`nav-link px-lg-3 py-3 py-lg-4 ${activeClass}`} to='/'>Home</NavLink></li>
-          <li className="nav-item"><NavLink className={`nav-link px-lg-3 py-3 py-lg-4 ${activeClass}`} to='/about'>About</NavLink></li>
-          <li className="nav-item"><NavLink className={`nav-link px-lg-3 py-3 py-lg-4 ${activeClass}`} to='/post'>Sample Post</NavLink></li>
-          <li className="nav-item"><NavLink className={`nav-link px-lg-3 py-3 py-lg-4 ${activeClass}`} to='/contact'>Contact</NavLink></li>
-        </ul>
-      </div>
-    </div>
-  </nav>)
+function Header({ index }) {
+	const headerContext = useHeader()
+	const [headerData, ] = headerContext
+	return (
+					<header key={headerData[index].id} className="masthead" style={{backgroundImage: `url(${headerData[index].backgroundImg})`}}>
+						<div className="container position-relative px-4 px-lg-5">
+							<div className="row gx-4 gx-lg-5 justify-content-center">
+								<div className="col-md-10 col-lg-8 col-xl-7">
+									<div className={`${headerData[index].name}-heading`}>
+										<h1>{headerData[index].heading}</h1>
+										<span className="subheading">{headerData[index].subheading}</span>
+										<span className="meta">
+											{headerData[index].meta}
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</header>
+	)
 }
 
 export default Header

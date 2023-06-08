@@ -1,23 +1,5 @@
-import aboutBg from '../../themes/startbootstrap-clean-blog-gh-pages/assets/img/about-bg.jpg'
-import { Link } from 'react-router-dom'
-
 function About() {
  return (<div>
-  {/* Navigation*/}
-  
-  {/* Page Header*/}
-  <header className="masthead" style={{backgroundImage: `url(${aboutBg})`}}>
-    <div className="container position-relative px-4 px-lg-5">
-      <div className="row gx-4 gx-lg-5 justify-content-center">
-        <div className="col-md-10 col-lg-8 col-xl-7">
-          <div className="page-heading">
-            <h1>About Me</h1>
-            <span className="subheading">This is what I do.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
   {/* Main Content*/}
   <main className="mb-4">
     <div className="container px-4 px-lg-5">
@@ -30,8 +12,6 @@ function About() {
       </div>
     </div>
   </main>
-  {/* Footer*/}
-  
 </div>
 )
 }

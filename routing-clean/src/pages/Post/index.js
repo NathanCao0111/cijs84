@@ -1,29 +1,7 @@
-import postBg from '../../themes/startbootstrap-clean-blog-gh-pages/assets/img/post-bg.jpg'
 import postSampleImg from '../../themes/startbootstrap-clean-blog-gh-pages/assets/img/post-sample-image.jpg'
-import { Link } from 'react-router-dom'
 
 function Post() {
  return (<div>
-  {/* Navigation*/}
-  
-  {/* Page Header*/}
-  <header className="masthead" style={{backgroundImage: `url(${postBg})`}}>
-    <div className="container position-relative px-4 px-lg-5">
-      <div className="row gx-4 gx-lg-5 justify-content-center">
-        <div className="col-md-10 col-lg-8 col-xl-7">
-          <div className="post-heading">
-            <h1>Man must explore, and this is exploration at its greatest</h1>
-            <h2 className="subheading">Problems look mighty small from 150 miles up</h2>
-            <span className="meta">
-              Posted by
-              <a href="#!">Start Bootstrap</a>
-              on August 24, 2022
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
   {/* Post Content*/}
   <article className="mb-4">
     <div className="container px-4 px-lg-5">
@@ -55,8 +33,6 @@ function Post() {
       </div>
     </div>
   </article>
-  {/* Footer*/}
-  
 </div>
 )
 }
